@@ -9,4 +9,4 @@ Vor dem Veröffentlichen müssen noch ergänzt werden:
 - mindestens ein bis drei veröffentlichungsreife Artikel;
 - eine eindeutige Kennzeichnung, sobald Affiliate-Links eingefügt werden.
 
-Die Dateien `index.html` und `style.css` bilden die Website. Sie können anschließend bei einem geeigneten Hosting-Anbieter veröffentlicht werden.
+Die Dateien `index.html` und `style.css` bilden die Website. Zusätzlich liegen Vorlagen für `impressum.html` und `datenschutz.html` bereit. Die Platzhalter darin müssen direkt im privaten Projekt ersetzt und bei jeder neuen Funktion der Website überprüft werden.
