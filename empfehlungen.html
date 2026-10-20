@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
   <head>
@@ -15,6 +16,13 @@
       .material-tabs button[aria-selected="true"] { background: #214b5a; border-color: #214b5a; color: #fff; }
       .material-panel { border: 1px solid #d8e2e4; border-radius: .75rem; background: #fff; padding: 1.5rem; }
       .material-panel h2 { margin-top: 0; }
+      .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+      .product-card { display: flex; flex-direction: column; gap: .7rem; padding: 1.1rem; border: 1px solid #d8e2e4; border-radius: .6rem; background: #f8fbfb; }
+      .product-card h3 { margin: 0; font-size: 1.05rem; }
+      .product-card p { margin: 0; color: #52666b; }
+      .product-card a { align-self: flex-start; margin-top: auto; color: #fff; background: #214b5a; border-radius: .35rem; font-weight: 700; padding: .65rem .85rem; text-decoration: none; }
+      .product-card a:hover, .product-card a:focus { background: #153945; }
+      .product-label { color: #52666b; font-size: .85rem; }
       .product-placeholder { margin: 1rem 0 0; padding: 1rem; border-radius: .5rem; background: #f5f8f8; color: #52666b; }
       .material-note { font-size: .95rem; color: #52666b; }
     </style>
@@ -28,7 +36,7 @@
       <p class="eyebrow">3D-DRUCK · ÜBERSICHT</p>
       <h1>3D-Druck-Empfehlungen</h1>
       <p class="recommendations-intro">Hier sammeln wir ausgewählte Materialien nach Einsatzzweck. Statt einer langen Liste findest du passende Varianten direkt bei dem Material, das zu deinem Projekt passt.</p>
-      <p class="disclosure"><strong>Transparenzhinweis:</strong> Sobald hier Produktlinks erscheinen, sind sie als Werbelinks gekennzeichnet. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+      <p class="disclosure"><strong>Transparenzhinweis:</strong> Die mit „Amazon-Werbelink“ markierten Schaltflächen sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
       <div class="material-tabs" role="tablist" aria-label="Filamentmaterial auswählen">
         <button type="button" id="tab-pla" role="tab" aria-selected="true" aria-controls="panel-pla">PLA</button>
         <button type="button" id="tab-petg" role="tab" aria-selected="false" aria-controls="panel-petg">PETG</button>
@@ -36,10 +44,19 @@
         <button type="button" id="tab-tpu" role="tab" aria-selected="false" aria-controls="panel-tpu">TPU</button>
       </div>
       <section class="material-panel" id="panel-pla" role="tabpanel" aria-labelledby="tab-pla">
-        <h2>PLA</h2><p>Der unkomplizierte Einstieg für Deko, Organizer, erste Prototypen und viele Alltagshelfer.</p><p class="product-placeholder">Ausgewählte PLA-Varianten folgen – zum Beispiel Schwarz, Weiß und weitere Farben.</p>
+        <h2>PLA</h2><p>Der unkomplizierte Einstieg für Deko, Organizer, erste Prototypen und viele Alltagshelfer.</p>
+        <div class="product-grid">
+          <article class="product-card"><h3>Bambu Lab PLA – Jadeweiß</h3><p>Eine helle PLA-Option für saubere, zurückhaltende Drucke.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0cgntZjl" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
+          <article class="product-card"><h3>eSUN PLA</h3><p>Ausgewählt als Preis-Leistungs-Tipp für den Einstieg.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0fcQvZTn" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
+          <article class="product-card"><h3>Insanmaze Silk PLA – Rot/Schwarz</h3><p>Dual-Color-Filament für auffälligere Dekorations- und Präsentationsdrucke.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B07o0gmY6" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
+        </div>
       </section>
       <section class="material-panel" id="panel-petg" role="tabpanel" aria-labelledby="tab-petg" hidden>
-        <h2>PETG</h2><p>Für robustere Teile, Werkstatthelfer und Projekte, die gelegentlich Feuchtigkeit abbekommen.</p><p class="product-placeholder">Ausgewählte PETG-Varianten folgen.</p>
+        <h2>PETG</h2><p>Für robustere Teile, Werkstatthelfer und Projekte, die gelegentlich Feuchtigkeit abbekommen.</p>
+        <div class="product-grid">
+          <article class="product-card"><h3>SUNLU PETG – Schwarz mit Spule</h3><p>Ausgewählt als Preis-Leistungs-Tipp; passend, wenn noch keine wiederverwendbare Spule vorhanden ist.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B06HCAije" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
+          <article class="product-card"><h3>SUNLU PETG – Vorteilspaket</h3><p>Eine Option, wenn bereits eine passende Spule vorhanden ist.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B03hKl2bc" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
+        </div>
       </section>
       <section class="material-panel" id="panel-asa" role="tabpanel" aria-labelledby="tab-asa" hidden>
         <h2>ASA</h2><p>Eine Option für spätere Outdoor- und Technikprojekte, wenn Drucker und Druckumgebung gut eingerichtet sind.</p><p class="product-placeholder">Ausgewählte ASA-Varianten folgen.</p>
