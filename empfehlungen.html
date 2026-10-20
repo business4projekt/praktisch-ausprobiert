@@ -1,83 +1,17 @@
 
 <!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sortierte 3D-Druck-Empfehlungen für PLA, PETG, ASA und TPU.">
-    <title>3D-Druck-Empfehlungen – Praktisch Ausprobiert</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      .recommendations { max-width: 960px; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
-      .recommendations-intro { max-width: 700px; font-size: 1.1rem; }
-      .disclosure { margin: 1.5rem 0 2.5rem; padding: 1rem 1.15rem; border-left: 4px solid #2f6a7a; background: #eef6f7; border-radius: .25rem; }
-      .material-tabs { display: flex; flex-wrap: wrap; gap: .65rem; margin: 2rem 0 1.25rem; }
-      .material-tabs button { appearance: none; border: 1px solid #b8c7ca; border-radius: 999px; background: #fff; color: #214b5a; cursor: pointer; font: inherit; font-weight: 700; padding: .7rem 1.1rem; }
-      .material-tabs button[aria-selected="true"] { background: #214b5a; border-color: #214b5a; color: #fff; }
-      .material-panel { border: 1px solid #d8e2e4; border-radius: .75rem; background: #fff; padding: 1.5rem; }
-      .material-panel h2 { margin-top: 0; }
-      .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
-      .product-card { display: flex; flex-direction: column; gap: .7rem; padding: 1.1rem; border: 1px solid #d8e2e4; border-radius: .6rem; background: #f8fbfb; }
-      .product-card h3 { margin: 0; font-size: 1.05rem; }
-      .product-card p { margin: 0; color: #52666b; }
-      .product-card a { align-self: flex-start; margin-top: auto; color: #fff; background: #214b5a; border-radius: .35rem; font-weight: 700; padding: .65rem .85rem; text-decoration: none; }
-      .product-card a:hover, .product-card a:focus { background: #153945; }
-      .product-label { color: #52666b; font-size: .85rem; }
-      .product-placeholder { margin: 1rem 0 0; padding: 1rem; border-radius: .5rem; background: #f5f8f8; color: #52666b; }
-      .material-note { font-size: .95rem; color: #52666b; }
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Zur Startseite von Praktisch Ausprobiert"><span class="brand-mark">P</span><span>Praktisch<br><strong>Ausprobiert</strong></span></a>
-      <nav aria-label="Hauptnavigation"><a href="index.html#themen">Themen</a><a href="index.html#artikel">Artikel</a><a href="empfehlungen.html" aria-current="page">Empfehlungen</a><a href="index.html#ueber-uns">Über das Projekt</a></nav>
-    </header>
-    <main class="recommendations">
-      <p class="eyebrow">3D-DRUCK · ÜBERSICHT</p>
-      <h1>3D-Druck-Empfehlungen</h1>
-      <p class="recommendations-intro">Hier sammeln wir ausgewählte Materialien nach Einsatzzweck. Statt einer langen Liste findest du passende Varianten direkt bei dem Material, das zu deinem Projekt passt.</p>
-      <p class="disclosure"><strong>Transparenzhinweis:</strong> Die mit „Amazon-Werbelink“ markierten Schaltflächen sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
-      <div class="material-tabs" role="tablist" aria-label="Filamentmaterial auswählen">
-        <button type="button" id="tab-pla" role="tab" aria-selected="true" aria-controls="panel-pla">PLA</button>
-        <button type="button" id="tab-petg" role="tab" aria-selected="false" aria-controls="panel-petg">PETG</button>
-        <button type="button" id="tab-asa" role="tab" aria-selected="false" aria-controls="panel-asa">ASA</button>
-        <button type="button" id="tab-tpu" role="tab" aria-selected="false" aria-controls="panel-tpu">TPU</button>
-      </div>
-      <section class="material-panel" id="panel-pla" role="tabpanel" aria-labelledby="tab-pla">
-        <h2>PLA</h2><p>Der unkomplizierte Einstieg für Deko, Organizer, erste Prototypen und viele Alltagshelfer.</p>
-        <div class="product-grid">
-          <article class="product-card"><h3>Bambu Lab PLA – Jadeweiß</h3><p>Eine helle PLA-Option für saubere, zurückhaltende Drucke.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0cgntZjl" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
-          <article class="product-card"><h3>eSUN PLA</h3><p>Ausgewählt als Preis-Leistungs-Tipp für den Einstieg.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0fcQvZTn" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
-          <article class="product-card"><h3>Insanmaze Silk PLA – Rot/Schwarz</h3><p>Dual-Color-Filament für auffälligere Dekorations- und Präsentationsdrucke.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B07o0gmY6" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
-        </div>
-      </section>
-      <section class="material-panel" id="panel-petg" role="tabpanel" aria-labelledby="tab-petg" hidden>
-        <h2>PETG</h2><p>Für robustere Teile, Werkstatthelfer und Projekte, die gelegentlich Feuchtigkeit abbekommen.</p>
-        <div class="product-grid">
-          <article class="product-card"><h3>SUNLU PETG – Schwarz mit Spule</h3><p>Ausgewählt als Preis-Leistungs-Tipp; passend, wenn noch keine wiederverwendbare Spule vorhanden ist.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B06HCAije" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
-          <article class="product-card"><h3>SUNLU PETG – Vorteilspaket</h3><p>Eine Option, wenn bereits eine passende Spule vorhanden ist.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B03hKl2bc" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article>
-        </div>
-      </section>
-      <section class="material-panel" id="panel-asa" role="tabpanel" aria-labelledby="tab-asa" hidden>
-        <h2>ASA</h2><p>Eine Option für spätere Outdoor- und Technikprojekte, wenn Drucker und Druckumgebung gut eingerichtet sind.</p><p class="product-placeholder">Ausgewählte ASA-Varianten folgen.</p>
-      </section>
-      <section class="material-panel" id="panel-tpu" role="tabpanel" aria-labelledby="tab-tpu" hidden>
-        <h2>TPU</h2><p>Für flexible Bauteile wie Puffer, Füße oder Kabelschoner.</p><p class="product-placeholder">Ausgewählte TPU-Varianten folgen.</p>
-      </section>
-      <p class="material-note">Die Seite wächst bewusst langsam: Es kommen nur Produkte hinein, die zu einem konkreten Material und Einsatzzweck passen.</p>
-    </main>
-    <footer>
-      <a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>Praktisch <strong>Ausprobiert</strong></span></a>
-      <p>Ideen für Technik, Kreativität &amp; Alltag.</p>
-      <div class="footer-meta"><p><a href="impressum.html">Impressum</a> <span aria-hidden="true">·</span> <a href="datenschutz.html">Datenschutz</a></p></div>
-    </footer>
-    <script>
-      const tabs = document.querySelectorAll('[role="tab"]');
-      const panels = document.querySelectorAll('[role="tabpanel"]');
-      tabs.forEach((tab) => tab.addEventListener('click', () => {
-        tabs.forEach((item) => item.setAttribute('aria-selected', String(item === tab)));
-        panels.forEach((panel) => { panel.hidden = panel.id !== tab.getAttribute('aria-controls'); });
-      }));
-    </script>
-  </body>
-</html>
+<html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Sortierte 3D-Druck-Empfehlungen für Materialien, Drucker und Zubehör."><title>3D-Druck-Empfehlungen – Praktisch Ausprobiert</title><link rel="stylesheet" href="style.css">
+<style>
+.recommendations{max-width:960px;margin:0 auto;padding:4rem 1.5rem 5rem}.recommendations-intro{max-width:700px;font-size:1.1rem}.disclosure{margin:1.5rem 0 2.5rem;padding:1rem 1.15rem;border-left:4px solid #2f6a7a;background:#eef6f7;border-radius:.25rem}.material-tabs{display:flex;flex-wrap:wrap;gap:.65rem;margin:2rem 0 1.25rem}.material-tabs button{appearance:none;border:1px solid #b8c7ca;border-radius:999px;background:#fff;color:#214b5a;cursor:pointer;font:inherit;font-weight:700;padding:.7rem 1.1rem}.material-tabs button[aria-selected="true"]{background:#214b5a;border-color:#214b5a;color:#fff}.material-panel{border:1px solid #d8e2e4;border-radius:.75rem;background:#fff;padding:1.5rem}.material-panel h2{margin-top:0}.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.25rem}.product-card{display:flex;flex-direction:column;gap:.7rem;padding:1.1rem;border:1px solid #d8e2e4;border-radius:.6rem;background:#f8fbfb}.product-card h3,.product-card p{margin:0}.product-card p,.product-label,.material-note{color:#52666b}.product-card a{align-self:flex-start;margin-top:auto;color:#fff;background:#214b5a;border-radius:.35rem;font-weight:700;padding:.65rem .85rem;text-decoration:none}.product-card a:hover,.product-card a:focus{background:#153945}.product-label,.material-note{font-size:.85rem}.product-placeholder{margin:1rem 0 0;padding:1rem;border-radius:.5rem;background:#f5f8f8;color:#52666b}
+</style></head>
+<body><header class="site-header"><a class="brand" href="index.html" aria-label="Zur Startseite von Praktisch Ausprobiert"><span class="brand-mark">P</span><span>Praktisch<br><strong>Ausprobiert</strong></span></a><nav aria-label="Hauptnavigation"><a href="index.html#themen">Themen</a><a href="index.html#artikel">Artikel</a><a href="empfehlungen.html" aria-current="page">Empfehlungen</a><a href="index.html#ueber-uns">Über das Projekt</a></nav></header>
+<main class="recommendations"><p class="eyebrow">3D-DRUCK · ÜBERSICHT</p><h1>3D-Druck-Empfehlungen</h1><p class="recommendations-intro">Hier sammeln wir ausgewählte Materialien, Drucker und Zubehör nach Einsatzzweck.</p><p class="disclosure"><strong>Transparenzhinweis:</strong> Die mit „Amazon-Werbelink“ markierten Schaltflächen sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+<div class="material-tabs" role="tablist" aria-label="Kategorie auswählen"><button type="button" id="tab-pla" role="tab" aria-selected="true" aria-controls="panel-pla">PLA</button><button type="button" id="tab-petg" role="tab" aria-selected="false" aria-controls="panel-petg">PETG</button><button type="button" id="tab-asa" role="tab" aria-selected="false" aria-controls="panel-asa">ASA</button><button type="button" id="tab-tpu" role="tab" aria-selected="false" aria-controls="panel-tpu">TPU</button><button type="button" id="tab-accessories" role="tab" aria-selected="false" aria-controls="panel-accessories">Drucker &amp; Zubehör</button></div>
+<section class="material-panel" id="panel-pla" role="tabpanel" aria-labelledby="tab-pla"><h2>PLA</h2><p>Der unkomplizierte Einstieg für Deko, Organizer, erste Prototypen und viele Alltagshelfer.</p><div class="product-grid"><article class="product-card"><h3>Bambu Lab PLA – Jadeweiß</h3><p>Eine helle PLA-Option für saubere, zurückhaltende Drucke.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0cgntZjl" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>eSUN PLA</h3><p>Ausgewählt als Preis-Leistungs-Tipp für den Einstieg.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0fcQvZTn" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>Insanmate Silk PLA – Rot/Schwarz</h3><p>Dual-Color-Filament für auffälligere Dekorations- und Präsentationsdrucke.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B07o0gmY6" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article></div></section>
+<section class="material-panel" id="panel-petg" role="tabpanel" aria-labelledby="tab-petg" hidden><h2>PETG</h2><p>Für robustere Teile, Werkstatthelfer und Projekte, die gelegentlich Feuchtigkeit abbekommen.</p><div class="product-grid"><article class="product-card"><h3>SUNLU PETG – Schwarz mit Spule</h3><p>Ausgewählt als Preis-Leistungs-Tipp; passend, wenn noch keine wiederverwendbare Spule vorhanden ist.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B06HCAije" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>SUNLU PETG – Vorteilspaket</h3><p>Eine Option, wenn bereits eine passende Spule vorhanden ist.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B03hKl2bc" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article></div></section>
+<section class="material-panel" id="panel-asa" role="tabpanel" aria-labelledby="tab-asa" hidden><h2>ASA</h2><p>Eine Option für spätere Outdoor- und Technikprojekte, wenn Drucker und Druckumgebung gut eingerichtet sind.</p><p class="product-placeholder">Ausgewählte ASA-Varianten folgen.</p></section>
+<section class="material-panel" id="panel-tpu" role="tabpanel" aria-labelledby="tab-tpu" hidden><h2>TPU</h2><p>Für flexible Bauteile wie Puffer, Füße oder Kabelschoner.</p><p class="product-placeholder">Ausgewählte TPU-Varianten folgen.</p></section>
+<section class="material-panel" id="panel-accessories" role="tabpanel" aria-labelledby="tab-accessories" hidden><h2>Drucker &amp; Zubehör</h2><p>Ausgewählte Geräte und Hilfsmittel für Einstieg, Mehrfarbendruck und die Druckvorbereitung.</p><div class="product-grid"><article class="product-card"><h3>Bambu Lab A1 mini</h3><p>Ein kompakter Einstieg, um 3D-Druck auszuprobieren.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B09HElaaq" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>Bambu Lab A1 Combo</h3><p>Für Projekte mit mehreren Farben.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0iQ6ADxa" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>Creality Space Pi Filamenttrockner</h3><p>Zum Trocknen und Vorbereiten von Filament.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B08yzD2kO" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>Bambu Lab P1S Combo</h3><p>Für technische Bauteile und mehrfarbige Projekte.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0dz4VAje" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>Effekt-Druckplatten</h3><p>Für besondere Oberflächen auf der ersten Druckschicht.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B0bXRvVPM" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>Isopropanol</h3><p>Zum Reinigen der Druckplatte.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B086AcvmJ" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article><article class="product-card"><h3>3DLAC Haftspray</h3><p>Für zusätzliche Haftung auf der Druckplatte.</p><span class="product-label">Amazon-Werbelink</span><a href="https://link.amazon/B06qPp85K" target="_blank" rel="sponsored noopener noreferrer">Bei Amazon ansehen</a></article></div></section><p class="material-note">Die Seite wächst bewusst langsam: Es kommen nur Produkte hinein, die zu einem konkreten Material und Einsatzzweck passen.</p></main>
+<footer><a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>Praktisch <strong>Ausprobiert</strong></span></a><p>Ideen für Technik, Kreativität &amp; Alltag.</p><div class="footer-meta"><p><a href="impressum.html">Impressum</a> <span aria-hidden="true">·</span> <a href="datenschutz.html">Datenschutz</a></p></div></footer>
+<script>const tabs=document.querySelectorAll('[role="tab"]');const panels=document.querySelectorAll('[role="tabpanel"]');tabs.forEach((tab)=>tab.addEventListener('click',()=>{tabs.forEach((item)=>item.setAttribute('aria-selected',String(item===tab)));panels.forEach((panel)=>{panel.hidden=panel.id!==tab.getAttribute('aria-controls');});}));</script></body></html>
